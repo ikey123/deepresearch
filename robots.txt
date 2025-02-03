@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /internal/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Allow search engines to read sitemap
+Sitemap: https://deepresearchai.net/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Additional rules for specific bots
+User-agent: Googlebot
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.gif
+
+User-agent: Bingbot
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.gif 
